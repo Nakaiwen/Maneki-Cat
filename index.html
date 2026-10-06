@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>招財貓求籤 · Nakai Wen</title>
+<style>
+:root{--paper:#fcf8f0;--ink:#45372e;--muted:#8c7c6b;--red:#9f342a;--gold:#b99050;--line:#e8dcc9}
+*{box-sizing:border-box}html{overflow-x:clip}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei",sans-serif;min-height:100vh}button,textarea{font:inherit}button{touch-action:manipulation}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:5px}header{max-width:1200px;margin:auto;padding:28px 38px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.brand{font:600 18px Georgia,serif;letter-spacing:.04em}.edition{font-size:11px;letter-spacing:.16em;color:var(--muted)}main{max-width:1170px;min-height:calc(100svh - 140px);margin:auto;padding:28px 28px 20px;display:grid;grid-template-columns:1.2fr 1fr;gap:45px;align-items:center}.scene{position:relative;padding-top:27px;min-width:0}.cat{position:relative;width:100%;aspect-ratio:1;isolation:isolate}.cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-drag:none}.body{z-index:2}.arm{z-index:1;transform-origin:83.5% 59.3%;will-change:transform;backface-visibility:hidden}.shadow{position:absolute;bottom:1.5%;left:22%;width:65%;height:4%;background:#54381f2a;border-radius:50%;filter:blur(12px)}.paw-hit{position:absolute;left:76%;top:16%;width:20%;height:19%;border-radius:48%;border:0;background:transparent;z-index:5;cursor:pointer;-webkit-tap-highlight-color:transparent}.paw-hit:disabled{cursor:default}.paw-hit:not(:disabled):hover{box-shadow:0 0 0 2px #bc90466b,0 0 25px #d9ab4540}.paw-hit:focus-visible{outline-offset:1px}.touch-tip{position:absolute;right:-2%;top:5%;background:var(--paper);border:1px solid #d8c09b;border-radius:24px;padding:10px 15px;font-size:13px;color:var(--red);pointer-events:none;transition:opacity .25s}.touch-tip:after{content:"";position:absolute;bottom:-19px;left:48%;height:17px;border-left:1px solid var(--gold);transform:rotate(-12deg)}.drawing .touch-tip,.has-result .touch-tip{opacity:0}.caption{text-align:center;color:var(--muted);font-size:12px;letter-spacing:.1em;margin-top:9px;min-height:20px}.eyebrow{display:flex;gap:10px;align-items:center;color:var(--red);letter-spacing:.18em;font-size:12px;margin-bottom:18px}.eyebrow:before{content:"";width:22px;border-top:1px solid var(--red)}h1{font:500 clamp(36px,4vw,51px)/1.4 "Songti TC","Noto Serif TC","PMingLiU",serif;letter-spacing:.12em;margin:0 0 18px}.intro{font-size:16px;line-height:1.95;color:#7a6958;margin:0 0 26px}.question-label{font-size:12px;color:var(--muted);letter-spacing:.07em}.question-label span{font-size:11px;margin-left:8px;color:#9c8e7f}textarea{display:block;margin:10px 0 25px;width:100%;height:87px;resize:vertical;background:#fffdf8;border:1px solid var(--line);border-radius:8px;padding:13px 15px;line-height:1.7;color:var(--ink);font-size:14px}textarea:focus{outline:2px solid #bb9a6266;outline-offset:2px}textarea::placeholder{color:#aa9c8d}.action-note{display:flex;align-items:center;gap:13px;border-top:1px solid var(--line);padding-top:20px}.seal{display:grid;place-items:center;width:37px;height:37px;border:1px solid #ab443a;border-radius:50%;color:var(--red);font-family:"Songti TC",serif;font-size:18px}.action-note p{margin:0;font-size:14px;line-height:1.8}.action-note small{font-size:12px;color:var(--muted)}.busy{padding:26px 0;min-height:223px}.busy h2{font:500 27px "Songti TC",serif;letter-spacing:.1em}.busy p{font-size:14px;line-height:1.8;color:var(--muted)}.dots{display:flex;gap:10px;margin-top:27px}.dots i{display:block;width:8px;height:8px;border-radius:50%;background:#e4d8c6;transition:background .2s}.dots i.on{background:var(--red)}.fortune{position:relative;padding:24px 28px 26px;background:#fffdf8;border:1px solid #c9ad7c;border-radius:3px;text-align:center;box-shadow:0 12px 35px #6c48200a}.fortune:before{content:"";position:absolute;inset:6px;border:1px solid #e4d4b7;pointer-events:none}.fortune-kicker{font-size:12px;letter-spacing:.24em;color:var(--red);margin:6px 0 10px}.fortune-number{font:500 54px/1.5 "Songti TC","PMingLiU",serif;letter-spacing:.06em;margin:0}.fortune-text{font-size:14px;color:var(--muted);line-height:1.9;margin:12px 0 0}.question-echo{font-size:13px;line-height:1.8;color:var(--muted);overflow-wrap:anywhere;white-space:pre-wrap;max-height:110px;overflow:auto;margin:18px 0}.reset{border:0;border-bottom:1px solid #a64e4550;padding:7px 1px;color:var(--red);background:transparent;font-size:13px;margin-top:20px;cursor:pointer}.fine{font-size:11px;color:#9e907f;line-height:1.8;margin:23px 0 0}.footer{text-align:center;font-size:11px;color:#ac9d8c;padding:15px 20px 22px;letter-spacing:.05em}[hidden]{display:none!important}.result-enter{animation:reveal .55s ease-out both}@keyframes reveal{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:740px){header{padding:20px 24px}.edition{font-size:10px}main{display:flex;flex-direction:column;gap:12px;padding:16px 25px 22px;min-height:0}.scene{width:min(100%,450px);padding-top:19px;order:2}.copy{width:min(100%,450px);display:contents}.heading{order:1;text-align:center}.eyebrow{justify-content:center;margin:6px 0 11px;font-size:11px}h1{font-size:34px;margin-bottom:8px}.intro{font-size:14px;margin-bottom:0}.content{order:3;width:min(100%,450px)}.caption{font-size:11px;margin-top:0}.touch-tip{top:4%;right:-1%;padding:8px 11px;font-size:12px}.question-label{font-size:11px}textarea{height:67px;margin-bottom:17px}.action-note{padding-top:15px}.fine{text-align:center;margin-top:18px}.busy{min-height:185px;text-align:center;padding:6px 0 16px}.dots{justify-content:center}.fortune{padding:20px}.fortune-number{font-size:43px}.footer{padding-top:8px}.intro br{display:none}}
+@media(prefers-reduced-motion:reduce){.result-enter{animation:none}.dots i{transition:none}}
+</style>
+<style>
+.copy{min-width:0}.lot-grade{display:inline-block;border:1px solid #c3a06a;border-radius:30px;padding:3px 13px;color:#886532;font-size:12px;letter-spacing:.13em;margin:10px 0 12px}.poem{white-space:pre-line;font:500 clamp(18px,2.2vw,23px)/2.05 "Songti TC","Noto Serif TC","PMingLiU",serif;letter-spacing:.13em;margin:5px 0 12px}.source-note{font-size:11px;line-height:1.8;color:var(--muted);margin:17px 0 0}.source-note a{color:#866434;text-underline-offset:3px}.ai-panel{margin-top:21px;border-top:1px solid var(--line);padding-top:23px}.ai-panel h3{font-size:17px;font-weight:500;letter-spacing:.04em;margin:0 0 8px}.ai-sub{font-size:12px;line-height:1.8;color:var(--muted);margin:0 0 15px}.tone-options{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 13px}.tone-options label{cursor:pointer;border:1px solid var(--line);border-radius:30px;padding:8px 13px;font-size:12px;background:#fffdf8}.tone-options label:has(input:checked){border-color:#b58750;background:#f3e9d9}.tone-options input{accent-color:var(--red);margin:0 6px 0 0;vertical-align:middle}.copy-button{width:100%;min-height:46px;padding:12px;border:1px solid var(--red);border-radius:8px;color:white;background:var(--red);font-size:14px;cursor:pointer}.copy-button:disabled{opacity:.6;cursor:wait}.ai-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:13px}.ai-links span{font-size:11px;color:var(--muted);margin-right:3px}.ai-links a{font-size:12px;text-decoration:none;color:var(--ink);border:1px solid var(--line);padding:7px 11px;border-radius:7px;background:#fffdf8}.ai-links a:hover{border-color:var(--gold)}.copy-status{min-height:20px;margin-top:9px;font-size:12px;line-height:1.8;color:var(--red)}.ai-note{font-size:11px;color:var(--muted);line-height:1.8;margin:14px 0 0}.fortune-number{font-size:40px}.fortune{scroll-margin-top:20px}.engine-error{color:var(--red);font-size:13px;line-height:1.8;border:1px solid var(--red);padding:12px;margin-top:15px}.reset{margin-top:14px}
+@media(min-width:741px){body.result-view main{align-items:start}body.result-view .scene{position:sticky;top:20px;margin-top:10px}}
+@media(max-width:740px){.poem{font-size:21px;letter-spacing:.11em}.fortune-number{font-size:35px}.ai-panel h3{font-size:16px}.ai-links{justify-content:center}.tone-options{justify-content:center}}
+.result-actions{display:flex;flex-direction:column;align-items:center;gap:18px;margin-top:23px}.coffee-support{width:100%;text-align:center;padding:22px 16px;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}.coffee-ask{margin:0 0 14px;font-size:14px;line-height:1.8;color:#78654e}.coffee-link{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;max-width:100%;padding:12px 22px;border:1px solid #c9af82;border-radius:12px;background:linear-gradient(135deg,#f5ebd7,#eddec1);color:#88612f;font-size:15px;font-weight:600;letter-spacing:.04em;text-decoration:none}.coffee-link:hover{background:#eee0c5;border-color:#a67b41}.result-actions .reset{width:100%;min-height:47px;margin:0;padding:12px 20px;border:1px solid var(--red);border-radius:8px;background:transparent;color:var(--red);font-size:14px}.result-actions .reset:hover{background:#9f342a08}
+</style>
+</head>
+<body>
+<header><span class="brand">Nakai Wen.</span><span class="edition">雷雨師一百籤 · v0.2.4</span></header>
+<main>
+ <section class="scene" aria-label="招財貓">
+  <div class="cat" id="cat">
+   <div class="shadow" aria-hidden="true"></div>
+   <img class="arm" id="arm" src="assets/arm.png" alt="" draggable="false">
+   <img class="body" src="assets/body.png" alt="奶油白陶瓷招財貓，微笑抱著金色福幣" draggable="false">
+   <button class="paw-hit" id="paw" type="button" aria-label="點一下招財貓舉起的手，招手三下後求籤" title="點一下招財手"></button>
+   <div class="touch-tip" aria-hidden="true">點一下我的手</div>
+  </div>
+  <div class="caption" id="status" role="status" aria-live="polite">輕輕一點，讓好緣分靠近。</div>
+ </section>
+ <section class="copy">
+  <div class="heading"><div class="eyebrow">一念一問 · 靜心求籤</div><h1>招財貓求籤</h1><p class="intro">心裡想著一件事，<br>讓招財貓為你招來一支籤。</p></div>
+  <div class="content">
+   <div id="idlePanel">
+    <label for="question" class="question-label">此刻，想問的事<span>也可以只在心中默念</span></label>
+    <textarea id="question" maxlength="300" placeholder="把心裡的那件事，輕輕放在這裡。"></textarea>
+    <div class="action-note"><span class="seal" aria-hidden="true">籤</span><p>點一下貓咪舉起的手<small><br>招手三下，等一支籤慢慢出現。</small></p></div>
+   </div>
+   <div id="busyPanel" class="busy" hidden><h2>正在為你招來一支籤…</h2><p>讓念頭慢下來，<br>陪貓咪招招手。</p><div class="dots" aria-hidden="true"><i></i><i></i><i></i></div></div>
+   <div id="resultPanel" hidden>
+    <article class="fortune" tabindex="-1" id="fortune"><p class="fortune-kicker">雷雨師一百籤</p><h2 class="fortune-number" id="number"></h2><div class="lot-grade" id="grade"></div><p class="poem" id="poem"></p><p class="source-note">籤詩原文出處：<a id="poemSource" href="https://zh.wikisource.org/wiki/關聖帝君靈籤" target="_blank" rel="noopener noreferrer">維基文庫 ↗</a></p></article>
+    <p class="question-echo" id="echo"></p>
+    <section class="ai-panel" aria-label="AI 解籤提示">
+     <h3>把這支籤，讀得更清楚</h3>
+     <p class="ai-sub">選擇語氣，複製完整提示，<br>再貼到你慣用的 AI，陪你一起讀籤。</p>
+     <div class="tone-options" role="radiogroup" aria-label="解籤語氣">
+      <label><input type="radio" name="tone" value="warm" checked>溫柔陪伴</label>
+      <label><input type="radio" name="tone" value="plain">平實中立</label>
+     </div>
+     <button class="copy-button" id="copyPrompt" type="button">複製完整解籤提示</button>
+     <div class="ai-links"><span>複製後貼到</span><a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT ↗</a><a href="https://claude.ai/new" target="_blank" rel="noopener noreferrer">Claude ↗</a><a href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Gemini ↗</a></div>
+     <div id="copyStatus" class="copy-status" role="status" aria-live="polite"></div>
+     <p class="ai-note">提示包含你填寫的問題、求籤時間、籤號、原文與出處。<br>由你自行貼上後，才會交給所選的 AI 解讀。</p>
+    </section>
+    <div class="result-actions">
+     <div class="coffee-support">
+      <p class="coffee-ask">這個小工具有陪到你嗎？</p>
+      <a class="coffee-link" href="https://buymeacoffee.com/nakaiwenp" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">☕</span><span>請Nakai喝杯咖啡</span></a>
+     </div>
+     <button type="button" class="reset" id="reset">問另外一件事</button>
+    </div>
+   </div>
+   <p class="fine">一事一問，留一些時間，看看事情如何發展。<br>求籤資料只留在此頁，重新整理就會清除。</p>
+   <p class="engine-error" id="engineError" hidden></p>
+  </div>
+ </section>
+</main>
+<div class="footer">一隻招財貓，一段靜下心來的時間。</div>
+<script src="data/fortunes.js"></script>
+<script src="prompt.js"></script>
+<script>
+(() => {
+ 'use strict';
+ const $ = id => document.getElementById(id);
+ const cat=$('cat'),arm=$('arm'),paw=$('paw'),status=$('status');
+ const panels={idle:$('idlePanel'),drawing:$('busyPanel'),result:$('resultPanel')};
+ const dots=[...document.querySelectorAll('.dots i')];
+ const lots=window.MANEKI_FORTUNES;
+ const DATA_OK=Array.isArray(lots)&&lots.length===100&&lots.every((p,i)=>p.id===i+1&&Array.isArray(p.lines)&&p.lines.length===4&&p.lines.every(s=>typeof s==='string'&&[...s].length===7)&&typeof p.grade==='string'&&p.grade.length>0&&typeof p.sourceUrl==='string'&&p.sourceUrl.startsWith('https://zh.wikisource.org/'));
+ const ENGINE_OK=DATA_OK&&!!window.ManekiPrompt&&typeof window.ManekiPrompt.buildPrompt==='function';
+ let state='idle',draws=0,cast=null;
+ function panel(next){state=next;for(const [k,v] of Object.entries(panels))v.hidden=k!==next;cat.classList.toggle('drawing',next==='drawing');cat.classList.toggle('has-result',next==='result');document.body.classList.toggle('result-view',next==='result');paw.disabled=next!=='idle'||!ENGINE_OK;paw.setAttribute('aria-busy',String(next==='drawing'));}
+ function drawNumber(){const bucket=new Uint32Array(1);const max=4294967200;do{crypto.getRandomValues(bucket);}while(bucket[0]>=max);return bucket[0]%100+1;}
+ async function wave(){
+  if(state!=='idle'||!ENGINE_OK)return;
+  const question=$('question').value.trim();
+  const date=new Intl.DateTimeFormat('zh-TW',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).format(new Date());
+  panel('drawing');dots.forEach(d=>d.classList.remove('on'));status.textContent='招手中，請稍等一下。';
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  try{
+   for(let i=0;i<3;i++){
+    dots[i].classList.add('on');
+    await arm.animate(reduced?[
+      {transform:'perspective(950px) rotateX(0deg)'},
+      {transform:'perspective(950px) rotateX(-8deg)'},
+      {transform:'perspective(950px) rotateX(0deg)'}
+     ]:[
+      {transform:'perspective(950px) rotateX(0deg)',offset:0},
+      {transform:'perspective(950px) rotateX(-57deg)',offset:.44},
+      {transform:'perspective(950px) rotateX(16deg)',offset:.80},
+      {transform:'perspective(950px) rotateX(0deg)',offset:1}
+     ],{duration:reduced?180:920,easing:'ease-in-out'}).finished;
+   }
+   const n=drawNumber();draws++;cast=Object.freeze({lot:lots[n-1],question,date});
+   $('number').textContent=`第 ${n} 籤`;
+   $('grade').textContent=cast.lot.grade;
+   $('poem').textContent=cast.lot.lines.join('\n');
+   $('poemSource').href=cast.lot.sourceUrl;
+   $('echo').textContent=question?`這次想問：${question}`:'未填問題，可以先閱讀籤詩，再向 AI 補充想問的事。';
+   refreshPrompt();
+   panel('result');$('fortune').classList.remove('result-enter');void $('fortune').offsetWidth;$('fortune').classList.add('result-enter');
+   status.textContent=`你求到了第 ${n} 籤。`;
+   $('fortune').focus({preventScroll:true});
+   if(matchMedia('(max-width:740px)').matches)$('fortune').scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
+  }catch(error){panel('idle');status.textContent='招手暫停了，再點一下我的手。';}
+ }
+ function selectedTone(){return document.querySelector('input[name="tone"]:checked').value;}
+ function refreshPrompt(){
+  if(!cast)return;
+  $('copyPrompt').textContent='複製完整解籤提示';$('copyStatus').textContent='';
+ }
+ async function copyText(text){
+  try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return true;}}catch(e){}
+  const box=document.createElement('textarea'),previous=document.activeElement;
+  box.value=text;box.setAttribute('readonly','');box.tabIndex=-1;
+  box.style.cssText='position:fixed;left:-9999px;top:0;opacity:0;font-size:16px;';
+  try{document.body.appendChild(box);box.focus({preventScroll:true});box.select();box.setSelectionRange(0,text.length);return document.execCommand('copy');}
+  catch(e){return false;}
+  finally{box.remove();if(previous&&previous.focus)previous.focus({preventScroll:true});}
+ }
+ $('copyPrompt').addEventListener('click',async()=>{
+  if(!cast)return;
+  const target=cast,button=$('copyPrompt'),text=window.ManekiPrompt.buildPrompt(cast,selectedTone());button.disabled=true;
+  const ok=await copyText(text);button.disabled=false;if(cast!==target)return;
+  if(ok){button.textContent='已複製 ✓';$('copyStatus').textContent='已複製，開啟你慣用的 AI 後貼上即可。';}
+  else{$('copyStatus').textContent='複製未成功，請檢查瀏覽器的剪貼簿權限後再試一次。';}
+ });
+ document.querySelectorAll('input[name="tone"]').forEach(el=>el.addEventListener('change',refreshPrompt));
+ paw.addEventListener('click',wave);
+ $('reset').addEventListener('click',()=>{cast=null;$('question').value='';panel('idle');status.textContent='輕輕一點，讓好緣分靠近。';$('question').focus({preventScroll:true});$('question').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});});
+ if(!ENGINE_OK){paw.disabled=true;$('engineError').hidden=false;$('engineError').textContent='籤詩資料未完整載入，請重新整理；若使用素材包，請確認 data 與 prompt.js 都與 index.html 放在一起。';status.textContent='籤詩資料尚未完整載入。';}
+ Object.defineProperty(window,'manekiState',{get:()=>({state,draws})});
+})();
+</script>
+</body>
+</html>
